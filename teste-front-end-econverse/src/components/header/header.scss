@@ -1,0 +1,17 @@
+// Header
+header{
+  height: 144px;
+  padding: 0 6.6vw;
+
+  .line{
+    width: 100%;
+    border: 1px solid #F0F0F0;
+  }
+
+}
+
+@media (max-width: 768px) {
+  header{
+    height: 500px;
+  }
+}
