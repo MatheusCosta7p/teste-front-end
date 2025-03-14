@@ -14,7 +14,7 @@ export const uiIconTypeSizeMap = new Map<TUiIconTypes, {width: number, height: n
     { width: 20, height: 20 },
   ],
   [
-    "Group",
+    "Expand",
     { width: 32, height: 32 },
   ],
   [

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./navbar.scss";
-import { Icon } from "../ui/Icon/Icon.ui";
+import { Icon } from "../../ui/Icon/Icon.ui";
 
 export default function Navbar() {
   const [activeLink, setActiveLink] = useState("ofertas");

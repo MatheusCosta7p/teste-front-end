@@ -1,7 +1,7 @@
-import HeaderTop from "./headerTop.component"
-import HeaderMiddle from "./headerMiddle.component"
-import Navbar from "./navbar.component"
+import Navbar from "./navbar/navbar.component"
 import "./header.scss"
+import HeaderTop from "./headerTop/headerTop.component"
+import HeaderMiddle from "./headerMiddle/headerMiddle.component"
 
 export default function Header() {
   return(

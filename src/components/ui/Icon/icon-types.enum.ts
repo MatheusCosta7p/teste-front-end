@@ -2,7 +2,7 @@ export const UiIconTypes = [
   "CreditCard",
   "ShieldCheck",
   "Truck",
-  "Group",
+  "Expand",
   "Heart",
   "UserCircle",
   "ShoppingCart",

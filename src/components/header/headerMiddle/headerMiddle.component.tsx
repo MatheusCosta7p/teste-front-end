@@ -1,5 +1,5 @@
-import { InputSearch } from "../inputSearch/inputSearch.component"
-import { Icon } from "../ui/Icon/Icon.ui"
+import { InputSearch } from "../../inputSearch/inputSearch.component";
+import { Icon } from "../../ui/Icon/Icon.ui";
 import "./headerMiddle.scss"
 
 export default function HeaderMiddle() {
@@ -14,18 +14,18 @@ export default function HeaderMiddle() {
           <InputSearch />
         </div>
 
-        <div className="icons">
+        <div className="iconsGroup">
           <button>
-            <Icon type="Group" />
+            <Icon className="iconExpand" type="Expand" />
           </button>
           <button>
-            <Icon type="Heart" />
+            <Icon className="icon" type="Heart" />
           </button>
           <button>
-            <Icon type="UserCircle" />
+            <Icon className="icon" type="UserCircle" />
           </button>
           <button>
-            <Icon type="ShoppingCart" />
+            <Icon className="icon" type="ShoppingCart" />
           </button>
         </div>
         

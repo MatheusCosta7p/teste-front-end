@@ -1,4 +1,4 @@
-import { Icon } from "../ui/Icon/Icon.ui";
+import { Icon } from "../../ui/Icon/Icon.ui"
 import "./headerTop.scss"
 
 export default function HeaderTop() {
