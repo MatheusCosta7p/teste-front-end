@@ -39,9 +39,6 @@
 .headerMiddle .icons button:hover {
   scale: 1.1;
   cursor: pointer;
-  svg {
-    stroke: #FF6347; 
-  }
 }
 
 
@@ -52,7 +49,7 @@
     height: auto;
     padding: 0.5rem;
     
-    .icons {
+    .iconsGroup {
       justify-content: center; 
       text-align: center; 
     }
