@@ -1,42 +1,43 @@
 import { TUiIconSvgs } from "./icon-svgs.enum";
 import { TUiIconTypes } from "./icon-types.enum";
 
+const BASE_URL = "/teste-front-end";
+
 export const uiIconTypeToSvgMap = new Map<TUiIconTypes, TUiIconSvgs>([
   [
     "CreditCard",
-    "/images/icons/CreditCard.svg",
+    `${BASE_URL}/images/icons/CreditCard.svg`,
   ],
   [
     "ShieldCheck",
-    "/images/icons/ShieldCheck.svg",
+    `${BASE_URL}/images/icons/ShieldCheck.svg`,
   ],
   [
     "Truck",
-    "/images/icons/Truck.svg",
+    `${BASE_URL}/images/icons/Truck.svg`,
   ],
   [
     "Group",
-    "/images/icons/Group.svg",
+    `${BASE_URL}/images/icons/Group.svg`,
   ],
   [
     "Heart",
-    "/images/icons/Heart.svg",
+    `${BASE_URL}/images/icons/Heart.svg`,
   ],
   [
     "UserCircle",
-    "/images/icons/UserCircle.svg",
+    `${BASE_URL}/images/icons/UserCircle.svg`,
   ],
   [
     "ShoppingCart",
-    "/images/icons/ShoppingCart.svg",
+    `${BASE_URL}/images/icons/ShoppingCart.svg`,
   ],
   [
     "MagnifyingGlass",
-    "/images/icons/MagnifyingGlass.svg"
+    `${BASE_URL}/images/icons/MagnifyingGlass.svg`,
   ],
   [
     "CrownSimple",
-    "/images/icons/CrownSimple.svg"
+    `${BASE_URL}/images/icons/CrownSimple.svg`,
   ]
-  
 ]);
