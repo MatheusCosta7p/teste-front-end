@@ -1,9 +1,10 @@
+import Header from '../../components/header/header.component';
 import './Home.scss';
 
 function Home() {
   return (
     <>
-      <h2>Econverse</h2>
+      <Header />
     </>
   )
 }

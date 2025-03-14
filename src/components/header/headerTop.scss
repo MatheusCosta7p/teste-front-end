@@ -1,0 +1,41 @@
+//HeaderTop
+.headerTop {
+  display: flex; 
+  height: 32px;
+  align-items: center; 
+  justify-content: center;
+  margin: 0;
+  gap: 7.438rem;
+  border: none;
+
+  p{
+    display: flex;
+    align-items: center;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--gray);
+    white-space: nowrap;
+
+    .icons{
+      margin-right: 0.5rem;
+    }
+
+    span{
+      color: var(--purple-color);
+      font-weight: 600;
+      margin: 0.1rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .headerTop {
+    flex-direction: column; 
+    gap: 0.5rem; 
+    height: auto;
+    p {
+      justify-content: center; 
+      text-align: center; 
+    }
+  }
+}
