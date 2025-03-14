@@ -1,17 +1,17 @@
 // Header
 header{
   height: 144px;
-  padding: 0 6.6vw;
+  padding: 0 5rem;
 
   .line{
     width: 100%;
-    border: 1px solid #F0F0F0;
+    border: 1px solid var(--soft-gray);
   }
 
 }
 
 @media (max-width: 768px) {
   header{
-    height: 500px;
+    height: auto;
   }
 }

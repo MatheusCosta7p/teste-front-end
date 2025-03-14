@@ -28,6 +28,7 @@ export default function HeaderMiddle() {
             <Icon type="ShoppingCart" />
           </button>
         </div>
+        
       </div>
     </>
   )

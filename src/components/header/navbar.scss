@@ -6,29 +6,32 @@ nav{
   padding: 5px 70px;
 
    ul {
+    height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     list-style: none;
 
+
     a {
       display: flex;  
       align-items: center; 
       text-decoration: none;
-      color: var(--gray);
+      color: var(--neutral-gray);
       font-size: 0.75rem; 
       font-weight: 600;
       text-transform: uppercase;
       text-align: center;
       transition: color 0.3s ease;
+      white-space: nowrap;
   
       &:hover,
       &:focus {
-        color: var(--purple-color); 
+        color: var(--primary-purple); 
       }
   
       &.active {
-        color: var(--purple-color); 
+        color: var(--primary-purple); 
       }
 
       .icon {

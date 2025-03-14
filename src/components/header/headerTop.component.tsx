@@ -5,14 +5,14 @@ export default function HeaderTop() {
   return(
     <>
     <div className="headerTop">
-      <p>
-        <Icon type="ShieldCheck" className="icons"/>compra <span> 100% segura</span>
+      <p className="headerTopText">
+        <Icon type="ShieldCheck" className="icons"/>compra <span className="headerTopSpan"> 100% segura</span>
       </p>
-      <p>
-        <Icon type="Truck" className="icons"/><span>Frete grátis</span> acima de R$ 200 
+      <p className="headerTopText">
+        <Icon type="Truck" className="icons"/><span className="headerTopSpan">Frete grátis</span> acima de R$ 200 
       </p>
-      <p>
-        <Icon type="CreditCard" className="icons"/><span>Parcele</span> suas compras
+      <p className="headerTopText">
+        <Icon type="CreditCard" className="icons"/><span className="headerTopSpan">Parcele</span> suas compras
       </p>
     </div>
   </>

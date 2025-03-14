@@ -1,0 +1,23 @@
+.btn {
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  &.yellow {
+    background-color: var(--accent-yellow);
+    padding: 7px 49px;
+    border-radius: 5px;
+    color: var(--deep-purple);
+    border: none;
+    color: var(--deep-purple);
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  &.blue {
+    background-color: var(--primary-color);
+  }
+
+  &:hover {
+    opacity: 0.9;
+  }
+}

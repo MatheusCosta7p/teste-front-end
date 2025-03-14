@@ -1,10 +1,10 @@
 import Header from '../../components/header/header.component';
-import './Home.scss';
-
+import { HeroSection } from '../../components/heroSection/heroSection.component';
 function Home() {
   return (
     <>
       <Header />
+      <HeroSection />
     </>
   )
 }

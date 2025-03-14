@@ -8,20 +8,20 @@
   gap: 7.438rem;
   border: none;
 
-  p{
+  .headerTopText{
     display: flex;
     align-items: center;
     font-size: 0.75rem;
     font-weight: 500;
-    color: var(--gray);
+    color: var(--neutral-gray);
     white-space: nowrap;
 
     .icons{
       margin-right: 0.5rem;
     }
 
-    span{
-      color: var(--purple-color);
+    .headerTopSpan{
+      color: var(--primary-purple);
       font-weight: 600;
       margin: 0.1rem;
     }
@@ -33,7 +33,7 @@
     flex-direction: column; 
     gap: 0.5rem; 
     height: auto;
-    p {
+    .headerTopText{
       justify-content: center; 
       text-align: center; 
     }

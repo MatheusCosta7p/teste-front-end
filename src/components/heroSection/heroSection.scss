@@ -1,0 +1,60 @@
+.heroSection {
+  height: 390px;
+  background-image: url("/teste-front-end/images/banner.png");
+  background-size: cover;
+  background-position: center;
+
+  div {
+    width: 60.375rem;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    background-color: transparent;
+    padding-left: 5.063rem;
+    padding-top: 4.875rem;
+    gap: 3px;
+
+    h3 {
+      color: var(--pure-white);
+      font-size: 3rem;
+      font-weight: 600;
+      line-height: 3.125rem;
+      height: 8rem;
+      width: 51.375rem;
+    }
+
+    p {
+      font-size: 2rem;
+      color: var(--pure-white);
+      line-height: 100%;
+      font-weight: 400;
+      height: 3rem;
+      width: 51.375rem;
+
+      span {
+        color: var(--accent-yellow);
+        font-weight: 700;
+      }
+    }
+
+    Button{
+      margin-left: 0.563rem;
+      margin-top: 2.563rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    div {
+      width: 100%;
+
+      h3 {
+        font-size: 1.5rem; 
+        height: 9rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+        height: 4rem;
+      }
+    }
+  }
+}

@@ -4,7 +4,7 @@
   position: relative;
 
   input[type="search"] {
-    background-color: #f6f5f2;
+    background-color: var(--off-white);
     height: 48px;
     width: 630px;
     border-radius: 10px;
@@ -16,7 +16,7 @@
     color: var(--gray);
 
     &::placeholder {
-      color: var(--gray);
+      color: var(--neutral-gray);
       font-weight: 500;
       font-size: 0.875rem; 
       line-height: 100%;
@@ -33,7 +33,7 @@
     right: 16px;
     top: 50%;
     transform: translateY(-50%);
-    color: var(--gray);
+    color: var( --neutral-gray);
     pointer-events: none;
     background-color: transparent;
   }
