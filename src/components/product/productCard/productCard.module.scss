@@ -1,18 +1,10 @@
-@import "../../assets/styles/base/variables";
-
-.productList {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  justify-content: center;
-  margin-top: 60px;
-}
+@import "../../../assets/styles/base/variables";
 
 .productCard {
   img {
     width: 278.1px;
+    margin-top: 13px;
     height: 228px;
-    margin-top: 12px;
   }
 
   .productName {
@@ -50,6 +42,12 @@
     font-weight: map-get($font-weights, "regular");
     margin-top: 7px;  
     margin-bottom: 12px;  
+  }
+}
 
+@media (max-width: 768px) {
+  .productCard {
+    width: 100%; 
+    max-width: 500px; 
   }
 }

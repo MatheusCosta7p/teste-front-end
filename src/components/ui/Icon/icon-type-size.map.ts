@@ -42,7 +42,7 @@ export const uiIconTypeSizeMap = new Map<TUiIconTypes, {width: number, height: n
     { width: 61, height: 61 }
   ],
   [
-    "Fasion",
+    "Fashion",
     { width: 61, height: 61 }
   ],
   [
@@ -64,5 +64,21 @@ export const uiIconTypeSizeMap = new Map<TUiIconTypes, {width: number, height: n
   [
     "Whiskey",
     { width: 61, height: 61 }
+  ],
+  [
+    "Prev",
+    { width: 7.47, height: 12.8}
+  ],
+  [
+    "Next",
+    { width: 7.47, height: 12.8}
+  ],
+  [
+    "Minus",
+    { width: 20.31, height: 19.64}
+  ],
+  [
+    "Plus",
+    { width: 20.31, height: 19.64}
   ],
 ]);

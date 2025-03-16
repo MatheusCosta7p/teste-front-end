@@ -1,8 +1,7 @@
 import { useState } from "react";
 import classNames from "classnames";
 import styles from "./categories.module.scss";
-import { TUiIconTypes } from "../ui/Icon/icon-types.enum";
-import { Icon } from "../ui/Icon/Icon.ui";
+import { Icon, TUiIconTypes } from "../ui/icon/Icon.ui";
 
 interface Category {
   key: string;

@@ -373,5 +373,37 @@ c36 -4 37 -5 37 -44 l0 -39 -60 0 -60 0 0 40 c0 25 5 40 13 41 10 0 10 2 0 6
         />
       </g>
     </svg>`
+  ],
+  [
+    "Prev",
+    `<svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.63341 1.74422L6.50094 0.599976L0.166748 6.99998L6.50094 13.4L7.63341 12.2557L2.4317 6.99998L7.63341 1.74422Z" fill="#3F3F40"/>
+</svg>
+`
+  ],
+  [
+    "Next",
+    `<svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.366707 12.2558L1.49918 13.4L7.83337 7.00002L1.49918 0.600024L0.366706 1.74427L5.56842 7.00002L0.366707 12.2558Z" fill="#3F3F40"/>
+</svg>
+`
+  ],
+  [
+    "Minus",
+    `
+    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.53812 10.2231H16.3843" stroke="#9F9F9F" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+</svg>
+
+    `
+  ],
+  [
+    "Plus",
+    `
+<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.6924 4.49585V15.9504" stroke="#271C47" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+<path d="M4.76859 10.2231H16.6147" stroke="#271C47" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+</svg>
+    `
   ]
 ]);

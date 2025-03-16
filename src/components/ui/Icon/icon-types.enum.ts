@@ -15,5 +15,9 @@ export const UiIconTypes = [
   "Run",
   "Tools",
   "Whiskey",
+  "Prev",
+  "Next",
+  "Minus",
+  "Plus"
 ] as const;
 export type TUiIconTypes = (typeof UiIconTypes)[number];

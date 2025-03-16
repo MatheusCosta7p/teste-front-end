@@ -16,7 +16,7 @@
     font-size: map-get($font-sizes, "400" );
   }
 
-  &--blue {
+  &--blue  {
     background-color: map-get($colors, "blue" );
     height: 44px;
     width: 275.85px;
@@ -26,7 +26,26 @@
     font-size: map-get($font-sizes, "300" );
   }
 
+  &--outline {
+    width:  32px; 
+    height: 32px;
+    border-radius: 50%;
+    color: map-get($colors, "white");  
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  }
+
+  &--quantity {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10.15px 8.36px 9.31px;
+    font-size: map-get($font-sizes, "450");
+  }
+
   &:hover {
     opacity: 0.9;
   }
+  
 }
