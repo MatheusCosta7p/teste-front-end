@@ -1,3 +1,5 @@
+@import "../../../assets/styles/base/variables";
+
 nav {
   height: 40px;
   border: none;
@@ -15,9 +17,9 @@ nav {
       display: flex;
       align-items: center;
       text-decoration: none;
-      color: var(--neutral-gray);
+      color: map-get($colors, "gray");
       font-size: 0.75rem;
-      font-weight: 600;
+      font-weight: map-get($font-weights, "semibold");
       text-transform: uppercase;
       text-align: center;
       transition: color 0.3s ease;
@@ -25,18 +27,18 @@ nav {
 
       &:hover,
       &:focus {
-        color: var(--primary-purple); 
+        color: map-get($colors, "purple" ); 
 
         .icon path {
-          stroke: var(--primary-purple);
+          stroke: map-get($colors, "purple" );
         }
       }
 
       &.active {
-        color: var(--primary-purple); 
+        color: map-get($colors, "purple" ); 
 
         .icon path {
-          stroke: var(--primary-purple);
+          stroke: map-get($colors, "purple" );
         }
       }
 

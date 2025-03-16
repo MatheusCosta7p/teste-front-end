@@ -1,8 +1,8 @@
 import { useState } from "react";
-import "./navbar.scss";
+import styles from "./headerBottom.module.scss";
 import { Icon } from "../../ui/Icon/Icon.ui";
 
-export default function Navbar() {
+export default function HeaderBottom() {
   const [activeLink, setActiveLink] = useState("ofertas");
 
   const handleLinkClick = (link: string) => {
@@ -10,12 +10,12 @@ export default function Navbar() {
   };
 
   return (
-    <nav>
+    <nav className={styles.nav}>
       <ul>
         <li>
           <a
             href="#"
-            className={activeLink === "todas-categorias" ? "active" : ""}
+            className={activeLink === "todas-categorias" ? styles.active : ""}
             onClick={(e) => {
               e.preventDefault();
               handleLinkClick("todas-categorias");
@@ -27,7 +27,7 @@ export default function Navbar() {
         <li>
           <a
             href="#"
-            className={activeLink === "supermercado" ? "active" : ""}
+            className={activeLink === "supermercado" ? styles.active : ""}
             onClick={(e) => {
               e.preventDefault();
               handleLinkClick("supermercado");
@@ -39,7 +39,7 @@ export default function Navbar() {
         <li>
           <a
             href="#"
-            className={activeLink === "livros" ? "active" : ""}
+            className={activeLink === "livros" ? styles.active : ""}
             onClick={(e) => {
               e.preventDefault();
               handleLinkClick("livros");
@@ -51,7 +51,7 @@ export default function Navbar() {
         <li>
           <a
             href="#"
-            className={activeLink === "moda" ? "active" : ""}
+            className={activeLink === "moda" ? styles.active : ""}
             onClick={(e) => {
               e.preventDefault();
               handleLinkClick("moda");
@@ -63,7 +63,7 @@ export default function Navbar() {
         <li>
           <a
             href="#"
-            className={activeLink === "lancamentos" ? "active" : ""}
+            className={activeLink === "lancamentos" ? styles.active : ""}
             onClick={(e) => {
               e.preventDefault();
               handleLinkClick("lancamentos");
@@ -75,7 +75,7 @@ export default function Navbar() {
         <li>
           <a
             href="#"
-            className={activeLink === "ofertas" ? "active" : ""}
+            className={activeLink === "ofertas" ? styles.active : ""}
             onClick={(e) => {
               e.preventDefault();
               handleLinkClick("ofertas");
@@ -87,13 +87,13 @@ export default function Navbar() {
         <li>
           <a
             href="#"
-            className={activeLink === "assinatura" ? "active" : ""}
+            className={activeLink === "assinatura" ? styles.active : ""}
             onClick={(e) => {
               e.preventDefault();
               handleLinkClick("assinatura");
             }}
           >
-            <Icon type="CrownSimple" className="icon"/> Assinatura
+            <Icon type="CrownSimple" className={styles.icon}/> Assinatura
           </a>
         </li>
       </ul>

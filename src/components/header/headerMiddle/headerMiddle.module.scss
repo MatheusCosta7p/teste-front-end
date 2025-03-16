@@ -1,3 +1,5 @@
+@import "../../../assets/styles/base/variables";
+
 .headerMiddle {
   height: 72px;
   border: none;
@@ -7,8 +9,8 @@
   align-items: center;
   
   .iconsGroup{
-    width: 15vw;
     display: flex;
+    gap: 32px;
     justify-content: space-between;
     transition: stroke 0.3s ease; 
 
@@ -23,10 +25,10 @@
     }
 
     button:hover .icon path {
-      stroke: var(--primary-purple); 
+      stroke: map-get($colors, "purple" ); 
     }
     button:hover .iconExpand path {
-      fill: var(--primary-purple); 
+      fill: map-get($colors, "purple" ); 
     }
   }
 }

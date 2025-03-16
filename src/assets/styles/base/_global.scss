@@ -1,17 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-:root {
-  --primary-purple: #3019B2;
-  --primary-blue: #3442B5;  
-  --accent-yellow: #F7CA11; 
-  --neutral-gray: #9F9F9F;   
-  --light-gray: #F4F4F4;     
-  --pure-white: #FFFFFF;     
-  --deep-purple: #271C47;    
-  --soft-gray: #F0F0F0;     
-  --off-white: #f6f5f2;   
-  --text-color: #4E4E4E;  
-}
+@import "./variables";
 
 html{
   background-color: var(--white);

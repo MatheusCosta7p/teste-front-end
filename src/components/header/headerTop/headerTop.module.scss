@@ -1,3 +1,5 @@
+@import "../../../assets/styles/base/variables";
+
 .headerTop {
   display: flex; 
   height: 32px;
@@ -10,9 +12,9 @@
   .headerTopText{
     display: flex;
     align-items: center;
-    font-size: 0.75rem;
-    font-weight: 500;
-    color: var(--neutral-gray);
+    font-size: map-get($font-sizes, "200");
+    color: map-get($colors, "gray");
+    font-weight: map-get($font-weights, "normal");
     white-space: nowrap;
 
     .icons{
@@ -20,9 +22,9 @@
     }
 
     .headerTopSpan{
-      color: var(--primary-purple);
-      font-weight: 600;
-      margin: 0.1rem;
+      color: map-get($colors, "purple");
+      font-weight: map-get($font-weights, "semibold");
+      margin: 0.2rem;
     }
   }
 }
@@ -32,6 +34,7 @@
     flex-direction: column; 
     gap: 0.5rem; 
     height: auto;
+    
     .headerTopText{
       justify-content: center; 
       text-align: center; 

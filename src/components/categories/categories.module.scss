@@ -1,3 +1,5 @@
+@import "./../../assets/styles/base/variables";
+
 .categoriesSection{
   display: flex;
   justify-content: center;
@@ -19,49 +21,49 @@
       justify-content: center;
       width: 8rem;
       height: 8rem;
-      background-color: var(--light-gray);
-      box-shadow: 0 4px 11px 0 rgba(0, 0, 0, 0.13);
+      background-color: map-get($colors, "light-gray");
+      box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.13);
       border-radius: 8px;
       cursor: pointer;
       transition: background-color 0.3s, color 0.3s;
       position: relative; 
 
       svg {
-        color: #000000;
+        color: map-get($colors, "black");
         transition: color 0.3s;
       }
 
       p {
         margin-top: 0.5rem;
-        font-weight: 500;
-        font-size: 0.875;
-        color: var(--text-color);
+        font-weight: map-get($font-weights, "normal");
+        font-size: map-get($font-sizes, "300");
+        color: map-get($colors, "text-color");
         transition: color 0.3s;
         position: absolute; 
-        bottom: -2rem; 
+        bottom: -2.5rem; 
         white-space: nowrap;
       }
 
       &:hover,
       &:focus {
-        background-color: var(--pure-white);
+        background-color: map-get($colors, "white");
         svg {
-          color: var(--primary-purple);
+          color: map-get($colors, "purple");
         }
         p {
-          color: var(--primary-purple);
-          font-weight: 600;
+          color: map-get($colors, "purple");
+          font-weight: map-get($font-weights, "normal");
         }
       }
 
       &.active {
-        background-color: var(--pure-white);
+        background-color: map-get($colors, "white");
         svg {
-          color: var(--primary-purple);
+          color: map-get($colors, "purple");
         }
         p {
-          color: var(--primary-purple);
-          font-weight: 600;
+          color: map-get($colors, "purple");
+          font-weight: map-get($font-weights, "semibold");
         }
       }
     }
@@ -83,5 +85,4 @@
       height: 80px;
     }
   }
-
 }

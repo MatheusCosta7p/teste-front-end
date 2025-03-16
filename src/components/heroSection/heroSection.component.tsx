@@ -1,13 +1,15 @@
-import Button from "../button/button.component"
-import "./heroSection.scss"
+import Button from "../ui/button/button.ui"
+import styles from "./heroSection.module.scss"
 
 export function HeroSection (){
   return(
-    <section className="heroSection">
+    <section className={styles.heroSection}>
       <div>
         <h3>Venha conhecer nossas <br/> promoções</h3>
         <p><span>50% Off</span> nos produtos</p>
-        <Button variant="yellow" text="Ver Produto" width="12.875rem" height="3.125rem"/>
+        <Button variant="yellow">
+          Ver Produto
+        </Button>
       </div>
     </section>
   )

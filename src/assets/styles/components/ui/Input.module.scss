@@ -1,0 +1,70 @@
+@import "../../base/variables";
+
+.input {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &--default {
+    input {
+      border: 1px solid map-get($colors, "gray"); 
+    }
+  }
+
+  &--search {
+    input {
+      background-color: map-get($colors, "off-white");
+      height: 48px;
+      width: 600px;
+      border-radius: 10px;
+      border: none;
+      padding: 0 16px;
+      font-size: 0.875rem;
+      font-weight: map-get($font-weights, "500" );
+      line-height: 100%;
+      color: map-get($colors, "gray");  
+
+      
+      &::placeholder {
+        color: map-get($colors, "gray");
+        font-weight: map-get($font-weights, "normal");
+        font-size: map-get($font-sizes, "300");
+        line-height: 100%;
+      }
+
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+      }
+
+      &::-webkit-search-cancel-button {
+        -webkit-appearance: none;
+        appearance: none;
+      }
+    }
+
+    .icon {
+      position: absolute;
+      right: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: map-get($colors, "off-white");
+      pointer-events: none;
+      background-color: transparent;
+    }  
+  }
+
+  @media (max-width: 768px) {
+    input {
+      width: auto; 
+
+      &::placeholder {
+        font-size: map-get($font-sizes, "200");
+      }
+    }
+
+    .icon {
+      right: 8px;
+    }
+  }
+}

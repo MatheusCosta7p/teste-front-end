@@ -1,18 +1,18 @@
 import { Icon } from "../../ui/Icon/Icon.ui"
-import "./headerTop.scss"
+import styles from "./headerTop.module.scss"
 
 export default function HeaderTop() {
   return(
     <>
-    <div className="headerTop">
-      <p className="headerTopText">
-        <Icon type="ShieldCheck" className="icons"/>compra <span className="headerTopSpan"> 100% segura</span>
+    <div className={styles.headerTop}>
+      <p className={styles.headerTopText}>
+        <Icon type="ShieldCheck" className={styles.icons}/>compra <span className={styles.headerTopSpan}> 100% segura</span>
       </p>
-      <p className="headerTopText">
-        <Icon type="Truck" className="icons"/><span className="headerTopSpan">Frete grátis</span> acima de R$ 200 
+      <p className={styles.headerTopText}>
+        <Icon type="Truck" className={styles.icons}/><span className={styles.headerTopSpan}>Frete grátis</span> acima de R$ 200 
       </p>
-      <p className="headerTopText">
-        <Icon type="CreditCard" className="icons"/><span className="headerTopSpan">Parcele</span> suas compras
+      <p className={styles.headerTopText}>
+        <Icon type="CreditCard" className={styles.icons}/><span className={styles.headerTopSpan}>Parcele</span> suas compras
       </p>
     </div>
   </>

@@ -1,3 +1,5 @@
+@import "../../assets/styles/base/variables";
+
 .heroSection {
   height: 390px;
   background-image: url("/teste-front-end/images/banner.png");
@@ -14,25 +16,25 @@
     gap: 3px;
 
     h3 {
-      color: var(--pure-white);
-      font-size: 3rem;
-      font-weight: 600;
+      color: map-get($colors, "white");
+      font-size: map-get($font-sizes, "850");
+      font-weight: map-get($font-weights, "semibold" );
       line-height: 3.125rem;
       height: 8rem;
       width: 51.375rem;
     }
 
     p {
-      font-size: 2rem;
-      color: var(--pure-white);
+      font-size: map-get($font-sizes, "700");
+      color: map-get($colors, "white");
       line-height: 100%;
-      font-weight: 400;
+      font-weight: map-get($font-weights, "regular" );
       height: 3rem;
       width: 51.375rem;
 
       span {
-        color: var(--accent-yellow);
-        font-weight: 700;
+        color: map-get($colors, "yellow");
+        font-weight: map-get($font-weights, "bold");
       }
     }
 
@@ -50,13 +52,13 @@
 
       h3 {
         width: auto;
-        font-size: 1.5rem; 
+        font-size: map-get($font-sizes, "600"); 
         height: 9rem;
       }
 
       p {
         width: auto;
-        font-size: 1.2rem;
+        font-size: map-get($font-sizes, "500");
         height: 4rem;
       }
     }

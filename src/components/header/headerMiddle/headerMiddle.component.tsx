@@ -1,31 +1,31 @@
-import { InputSearch } from "../../inputSearch/inputSearch.component";
+import Input from "../../ui/input/input.ui";
 import { Icon } from "../../ui/Icon/Icon.ui";
-import "./headerMiddle.scss"
+import styles from "./headerMiddle.module.scss"
 
 export default function HeaderMiddle() {
   return(
     <>
-      <div className="headerMiddle">
+      <div className={styles.headerMiddle} >
         <div>
           <img src="./images/Logo.svg" alt="Logo Econverse"/>
         </div>
 
         <div>
-          <InputSearch />
+          <Input variant="search" type="search" placeholder="O que você está buscando?" icon="MagnifyingGlass"/>
         </div>
 
-        <div className="iconsGroup">
+        <div className={styles.iconsGroup}>
           <button>
-            <Icon className="iconExpand" type="Expand" />
+            <Icon className={styles.iconExpand} type="Expand" />
           </button>
           <button>
-            <Icon className="icon" type="Heart" />
+            <Icon className={styles.icon} type="Heart" />
           </button>
           <button>
-            <Icon className="icon" type="UserCircle" />
+            <Icon className={styles.icon} type="UserCircle" />
           </button>
           <button>
-            <Icon className="icon" type="ShoppingCart" />
+            <Icon className={styles.icon} type="ShoppingCart" />
           </button>
         </div>
         
