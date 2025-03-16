@@ -7,6 +7,13 @@ export const UiIconTypes = [
   "UserCircle",
   "ShoppingCart",
   "MagnifyingGlass",
-  "CrownSimple"
+  "CrownSimple",
+  "Device",
+  "Fashion",
+  "Health",
+  "Market",
+  "Run",
+  "Tools",
+  "Whiskey",
 ] as const;
 export type TUiIconTypes = (typeof UiIconTypes)[number];

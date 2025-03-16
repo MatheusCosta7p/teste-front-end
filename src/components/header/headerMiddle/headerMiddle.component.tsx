@@ -6,14 +6,14 @@ export default function HeaderMiddle() {
   return(
     <>
       <div className={styles.headerMiddle} >
-        <div>
-          <img src="./images/Logo.svg" alt="Logo Econverse"/>
-        </div>
+        
+        <a className={styles.logo} href="#">
+          <img src="./images/Logo.svg" alt="" />
+        </a>
 
         <div>
           <Input variant="search" type="search" placeholder="O que você está buscando?" icon="MagnifyingGlass"/>
         </div>
-
         <div className={styles.iconsGroup}>
           <button>
             <Icon className={styles.iconExpand} type="Expand" />
@@ -27,10 +27,8 @@ export default function HeaderMiddle() {
           <button>
             <Icon className={styles.icon} type="ShoppingCart" />
           </button>
-        </div>
-        
+        </div>    
       </div>
     </>
   )
-
 }

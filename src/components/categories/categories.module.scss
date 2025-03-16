@@ -29,12 +29,14 @@
       position: relative; 
 
       svg {
+        width: 61px;
+        height: 61px;
         color: map-get($colors, "black");
         transition: color 0.3s;
       }
 
       p {
-        margin-top: 0.5rem;
+        margin-top: 1.25rem;
         font-weight: map-get($font-weights, "normal");
         font-size: map-get($font-sizes, "300");
         color: map-get($colors, "text-color");

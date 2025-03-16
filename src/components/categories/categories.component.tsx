@@ -1,28 +1,23 @@
-import { JSX, useState } from "react";
+import { useState } from "react";
 import classNames from "classnames";
 import styles from "./categories.module.scss";
-import DeviceIcon from "./icons/device.icons";
-import FashionIcon from "./icons/fashion.icons";
-import HealthIcon from "./icons/health.icons";
-import MarketIcon from "./icons/market.icons";
-import RunIcon from "./icons/run.icons";
-import ToolsIcon from "./icons/tools.icons";
-import WhiskeyIcon from "./icons/whiskey.icons";
+import { TUiIconTypes } from "../ui/Icon/icon-types.enum";
+import { Icon } from "../ui/Icon/Icon.ui";
 
 interface Category {
   key: string;
-  icon: JSX.Element;
+  icon: TUiIconTypes;
   label: string;
 }
 
 const categories: Category[] = [
-  { key: "tecnologia", icon: <DeviceIcon />, label: "Tecnologia" },
-  { key: "supermercado", icon: <MarketIcon />, label: "Supermercado" },
-  { key: "bebidas", icon: <WhiskeyIcon />, label: "Bebidas" },
-  { key: "ferramentas", icon: <ToolsIcon />, label: "Ferramentas" },
-  { key: "saude", icon: <HealthIcon />, label: "Saúde" },
-  { key: "esportes", icon: <RunIcon />, label: "Esportes e Fitness" },
-  { key: "moda", icon: <FashionIcon />, label: "Moda" },
+  { key: "tecnologia", icon: "Device", label: "Tecnologia" },
+  { key: "supermercado", icon: "Market", label: "Supermercado" },
+  { key: "bebidas", icon: "Whiskey", label: "Bebidas" },
+  { key: "ferramentas", icon: "Tools", label: "Ferramentas" },
+  { key: "saude", icon: "Health", label: "Saúde" },
+  { key: "esportes", icon: "Run", label: "Esportes e Fitness" },
+  { key: "moda", icon: "Fashion", label: "Moda" },
 ];
 
 export function Categories() {
@@ -43,7 +38,7 @@ export function Categories() {
             })}
             onClick={() => handleCategoryClick(category.key)}
           >
-            {category.icon}
+            <Icon type={category.icon} />
             <p>{category.label}</p>
           </div>
         ))}

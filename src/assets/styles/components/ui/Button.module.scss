@@ -5,7 +5,7 @@
   transition: background-color 0.3s ease, color 0.3s ease;
   border: none;
 
-  &.yellow {
+  &--yellow {
     width:12.875rem; 
     height: 3.125rem;
     background-color: map-get($colors, "yellow" );  
@@ -16,7 +16,7 @@
     font-size: map-get($font-sizes, "400" );
   }
 
-  &.blue {
+  &--blue {
     background-color: map-get($colors, "blue" );
   }
 

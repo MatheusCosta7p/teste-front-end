@@ -7,6 +7,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  .logo {
+    width: 100%;
+    max-width: 139px;
+    height: 41px;
+    object-fit: cover;
+    transition: all 100ms ease-in-out;
+    
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+    }
+  }
   
   .iconsGroup{
     display: flex;

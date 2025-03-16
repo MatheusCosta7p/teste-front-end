@@ -37,4 +37,32 @@ export const uiIconTypeSizeMap = new Map<TUiIconTypes, {width: number, height: n
     "CrownSimple",
     { width: 20, height: 20 }
   ],
+  [
+    "Device",
+    { width: 61, height: 61 }
+  ],
+  [
+    "Fasion",
+    { width: 61, height: 61 }
+  ],
+  [
+    "Health",
+    { width: 61, height: 61 }
+  ],
+  [
+    "Market",
+    { width: 61, height: 61 }
+  ],
+  [
+    "Run",
+    { width: 61, height: 61 }
+  ],
+  [
+    "Tools",
+    { width: 61, height: 61 }
+  ],
+  [
+    "Whiskey",
+    { width: 61, height: 61 }
+  ],
 ]);
