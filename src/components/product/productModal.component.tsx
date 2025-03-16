@@ -6,9 +6,9 @@ const ProductModal: React.FC = () => {
   const { slug } = useParams();
   const navigate = useNavigate();
 
-  // Função para fechar a modal
+ 
   const closeModal = () => {
-    navigate(-1); // Volta para a URL anterior
+    navigate(-1); 
   };
 
   return (

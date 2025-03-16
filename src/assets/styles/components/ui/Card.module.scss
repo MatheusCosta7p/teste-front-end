@@ -1,0 +1,22 @@
+@import "./../../base/variables";
+
+.card {
+  width: 304px;
+  height: 500px;
+  background-color: map-get($colors,  "white");
+  box-shadow: 0 3px 19px 0 rgba(0, 0, 0, 0.22);
+  border-radius: 10px;
+  object-fit: cover;
+  transition: all 100ms ease-in-out;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.01);
+    cursor: pointer;
+  }
+
+  &--product {
+    padding: 17px 13.51px 16px 12.39px;
+
+  }
+}

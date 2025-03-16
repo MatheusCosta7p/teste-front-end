@@ -18,6 +18,12 @@
 
   &--blue {
     background-color: map-get($colors, "blue" );
+    height: 44px;
+    width: 275.85px;
+    border-radius: 4px;
+    color: map-get($colors, "white" );
+    font-weight: map-get($font-weights, "bold");
+    font-size: map-get($font-sizes, "300" );
   }
 
   &:hover {

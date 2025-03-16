@@ -5,12 +5,15 @@ import { HeroSection } from '../../components/heroSection/heroSection.component'
 
 function Home() {
   return (
-    <>
+    <main>
       <Header />
+
       <HeroSection />
+
       <Categories />
+      
       <ProductList />
-    </>
+    </main>
   )
 }
 

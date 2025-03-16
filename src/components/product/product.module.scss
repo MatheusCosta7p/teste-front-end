@@ -1,33 +1,55 @@
+@import "../../assets/styles/base/variables";
+
 .productList {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
   justify-content: center;
+  margin-top: 60px;
 }
 
 .productCard {
-  background-color: #f0f0f0;
-  border-radius: 8px;
-  padding: 16px;
-  width: 200px;
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-
   img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 8px;
+    width: 278.1px;
+    height: 228px;
+    margin-top: 12px;
   }
 
-  h3 {
-    font-size: 1.2rem;
-    margin: 8px 0;
+  .productName {
+    font-size: map-get($font-sizes, "350");
+    color: map-get($colors, "gray-dark");
+    font-weight: map-get($font-weights, "light");
+    line-height: 100%;
+    margin-top: 0;  
+  }
+
+  .priceDiscounted {
+    font-size: map-get($font-sizes, "500");
+    color: map-get($colors, "gray-dark");
+    font-weight: map-get($font-weights, "bold");
+    margin-top: 12px; 
+
+    span {
+      font-size: map-get($font-sizes, "400");
+      color: map-get($colors, "medium-gray");
+      font-weight: map-get($font-weights, "regular");
+      margin-bottom: 2px; 
+    }
+  }
+
+  .priceInstallments {
+    font-size: map-get($font-sizes, "200");
+    color: map-get($colors, "gray-dark");
+    font-weight: map-get($font-weights, "regular");
+    margin-top: 2px; 
   }
 
   p {
-    font-size: 0.9rem;
-    color: #666;
+    font-size: map-get($font-sizes, "200");
+    color: map-get($colors, "blue");
+    font-weight: map-get($font-weights, "regular");
+    margin-top: 7px;  
+    margin-bottom: 12px;  
+
   }
 }
