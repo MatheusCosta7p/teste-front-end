@@ -1,19 +1,61 @@
 @import "./../../base/variables";
 
 .card {
-  width: 304px;
-  height: 500px;
   background-color: map-get($colors,  "white");
-  box-shadow: 0 3px 19px 0 rgba(0, 0, 0, 0.22);
-  border-radius: 10px;
 
-  &:hover,
-  &:focus {
-    transform: scale(1.003);
-    cursor: pointer;
-  }
-  
   &--product {
     padding: 17px 13.51px 16px 12.39px;
+    width: 304px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 3px 19px 0 rgba(0, 0, 0, 0.22);
+
+    &:hover,
+    &:focus {
+      transform: scale(1.003);
+      cursor: pointer;
+    }
+  }
+
+  &--partner { 
+    width: 634px;
+    height: 350px;
+    background-image: url("/teste-front-end/images/partner.png");
+    border-radius: 20px;
+    padding-top: 89px;
+  
+    div {
+      object-fit: cover;
+      height: 261px;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0) 100%);
+      border-bottom-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+      padding-left: 44.18px;
+      padding-top: 25px;
+      
+      h5{
+        font-size: map-get($font-sizes,"800");
+        font-weight: map-get($font-weights,"bold");
+        color: map-get($colors, "white" );
+        margin-bottom: 8px;
+        height: 60px;
+      }
+
+      p{
+        font-size: map-get($font-sizes,"450");
+        font-weight: map-get($font-weights,"light");
+        color: map-get($colors, "white" );
+        width: 199px;
+        height: 48px;
+        margin-bottom: 32px;
+      }
+
+      button{
+        width: 144.69px;
+        height: 48px;
+        font-size: map-get($font-sizes, "400" );
+        font-weight: map-get($font-weights, "bold");
+      }
+    }
   }
 }

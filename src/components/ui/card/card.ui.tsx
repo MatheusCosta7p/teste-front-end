@@ -4,7 +4,7 @@ import styles from "../../../assets/styles/components/ui/_card.module.scss";
 
 interface CardProps {
   children: ReactNode;
-  variant?: "default" | "product"; 
+  variant?: "default" | "product" | "partner"; 
   className?: string;
 }
 
