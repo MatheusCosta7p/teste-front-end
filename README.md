@@ -59,6 +59,17 @@ Aqui está uma captura de tela do quadro Kanban do GitHub:
 
 ![Kanban Board](https://github.com/user-attachments/assets/385d6efd-dcde-437a-a08b-352eacf49e97)
 
+### Gerenciamento de Branches
+
+O desenvolvimento foi realizado utilizando **duas branches** principais:
+
+- **`dev`**: Onde foram feitas as implementações de novas features e melhorias. Cada nova funcionalidade foi desenvolvida em uma branch separada e, após concluída, foi enviada para a branch `dev`.
+  
+- **`main`**: A branch principal, onde as funcionalidades testadas e aprovadas na `dev` foram integradas por meio de **merge**.
+
+Esse fluxo de trabalho garantiu que o desenvolvimento das novas funcionalidades não interferisse diretamente na versão estável do projeto, mantendo uma estrutura limpa e organizada.
+
+
 ### Link do Projeto em Deploy
 
 Deploy do projeto feito apartir do Github Pages com Github Action:
