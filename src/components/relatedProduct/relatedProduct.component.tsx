@@ -1,5 +1,5 @@
 import Filter from "./filter/filter.component";
-import styles from "./relatedProduct.module.scss";
+import styles from "./_relatedProduct.module.scss";
 
 interface RelatedProductProps {
   filter?: boolean;

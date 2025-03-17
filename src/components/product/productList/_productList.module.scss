@@ -1,0 +1,23 @@
+@import "../../../assets/styles/base/variables";
+
+.productListWrapper {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+@media (max-width: 768px) {
+  .pagination {
+    display: none;
+  }
+
+  .productListWrapper {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 16px;
+  }
+}

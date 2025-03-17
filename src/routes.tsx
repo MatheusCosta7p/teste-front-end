@@ -1,13 +1,19 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { createRoutesFromElements, Route, RouterProvider, createBrowserRouter } from 'react-router';
 import Home from './pages/home/Home';
+import NotFound from '../src/pages/notFound'; 
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <>
+      <Route path="/teste-front-end" element={<Home />} />
+      <Route path="*" element={<NotFound />} /> 
+    </>
+  )
+);
 
 const AppRoutes: React.FC = () => {
-  return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-    </Routes>
-  );
+  return <RouterProvider router={router} />;
 };
 
 export default AppRoutes;

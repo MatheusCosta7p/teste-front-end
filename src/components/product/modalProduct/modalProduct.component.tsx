@@ -1,6 +1,6 @@
 import React from 'react';
 import { IProduct } from 'src/types/product.type';
-import styles from './modalProduct.module.scss';
+import styles from './_modalProduct.module.scss';
 import Button from '../../ui/button/button.ui';
 import Modal from '../../ui/modal/modal.component';
 import { formatPriceToBRL } from '../../../utils/price.utils';
@@ -23,7 +23,7 @@ export const ModalProduct: React.FC<ModalProductProps> = ({ product, closeModal 
         </div>
         <div className={styles.textColumn}>
           <h2>{product.productName}</h2>
-          <p>{formatPriceToBRL(product.price)}</p>
+          <p>R$ {formatPriceToBRL(product.price)}</p>
           <small>{product.descriptionShort}</small>
           <br />
           <a>Veja mais detalhes do produto &gt;</a>

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Button from "../../ui/button/button.ui";
-import styles from "./filter.module.scss";
+import styles from "./_filter.module.scss";
 
 const filterOption = [
   { title: "celular" },

@@ -1,5 +1,5 @@
 import Button from "../ui/button/button.ui"
-import styles from "./heroSection.module.scss"
+import styles from "./_heroSection.module.scss"
 
 export function HeroSection (){
   return(

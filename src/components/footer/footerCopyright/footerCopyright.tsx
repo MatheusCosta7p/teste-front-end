@@ -1,4 +1,4 @@
-import styles from "./footerCopyright.module.scss"
+import styles from "./_footerCopyright.module.scss"
 
 export default function FooterCopyright () {
   return(

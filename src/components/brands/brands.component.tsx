@@ -1,5 +1,5 @@
 import { IBrand } from "src/types/brand.type"
-import styles from "./brands.module.scss"
+import styles from "./_brands.module.scss"
 
 const brands: IBrand[] =[
   { brandName: "econverse", logo: "/teste-front-end/images/Logo.svg"},

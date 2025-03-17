@@ -1,4 +1,4 @@
-import styles from "../../assets/styles/components/_header.module.scss"
+import styles from "./_header.module.scss"
 import HeaderTop from "./headerTop/headerTop.component"
 import HeaderMiddle from "./headerMiddle/headerMiddle.component"
 import HeaderBottom from "./headerBottom/headerBottom.component"

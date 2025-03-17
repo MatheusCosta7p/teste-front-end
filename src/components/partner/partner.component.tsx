@@ -1,6 +1,6 @@
 import Button from "../ui/button/button.ui";
 import { Card } from "../ui/card/card.ui";
-import styles from "./partner.module.scss";
+import styles from "./_partner.module.scss";
 
 const partnerCards = [
   { title: "Parceiros", description: "Lorem ipsum dolor sit amet, consectetur", buttonText: "CONFIRA" },

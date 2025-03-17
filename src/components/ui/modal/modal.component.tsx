@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import styles from "../../../assets/styles/components/ui/_modal.module.scss";
+import styles from "./_modal.module.scss";
 
 interface ModalProps {
   children?: React.ReactNode;

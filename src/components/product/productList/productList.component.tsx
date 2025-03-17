@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { IProduct } from 'src/types/product.type';
-import styles from './productList.module.scss';
+import styles from './_productList.module.scss';
 import { useProducts } from '../../../hooks/useProducts';
 import { Pagination } from '../../ui/pagination/pagination.ui';
 import { ModalProduct } from '../modalProduct/modalProduct.component';

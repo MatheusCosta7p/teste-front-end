@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../product/productList/productList.module.scss';
+import styles from './_pagination.module.scss';
 import Button from '../button/button.ui';
 import { Icon } from '../Icon/Icon.ui';
 

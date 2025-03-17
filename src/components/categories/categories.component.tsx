@@ -1,6 +1,6 @@
 import { useState } from "react";
 import classNames from "classnames";
-import styles from "./categories.module.scss";
+import styles from "./_categories.module.scss";
 import { Icon } from "../ui/Icon/Icon.ui";
 import { ICategory } from "src/types/category.type";
 

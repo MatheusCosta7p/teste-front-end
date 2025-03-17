@@ -1,6 +1,6 @@
 import React from 'react';
 import { formatPriceToBRL } from '../../../utils/price.utils';
-import styles from './productCard.module.scss';
+import styles from './_productCard.module.scss';
 import { IProduct } from '../../../types/product.type';
 import Button from '../../ui/button/button.ui';
 import { Card } from '../../ui/card/card.ui';
@@ -25,10 +25,10 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, openModal, se
         <p className={styles.productName}>{product.descriptionShort}</p>
         <p className={styles.priceDiscounted}>
           <span style={{ textDecoration: 'line-through' }}>
-            {formatPriceToBRL(product.price)}
+            R$ {formatPriceToBRL(product.price)}
           </span>
           <br />
-          {formatPriceToBRL(product.price)}
+          R$ {formatPriceToBRL(product.price)}
         </p>
         <p className={styles.priceInstallments}>
         ou 2x de {formatPriceToBRL(product.price/2)} sem juros

@@ -1,5 +1,5 @@
 import { Icon } from "../ui/Icon/Icon.ui";
-import styles from "./footer.module.scss";
+import styles from "./_footer.module.scss";
 import FooterCopyright from "./footerCopyright/footerCopyright";
 
 export default function Footer() {

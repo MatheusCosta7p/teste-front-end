@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import classNames from "classnames";
-import styles from "../../../assets/styles/components/ui/_card.module.scss";
+import styles from "./_card.module.scss";
 
 interface CardProps {
   children: ReactNode;

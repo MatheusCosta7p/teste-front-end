@@ -1,6 +1,6 @@
 import Button from "../ui/button/button.ui"
 import Input from "../ui/input/input.ui"
-import styles from "./newsLetter.module.scss"
+import styles from "./_newsLetter.module.scss"
 
 export function NewsLetter() {
   return(
