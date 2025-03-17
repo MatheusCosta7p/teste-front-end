@@ -1,5 +1,5 @@
 import React from 'react';
-import { formatPrice, getDiscountedPrice, getInstallments } from '../../../utils/price.utils';
+import { formatPriceToBRL } from '../../../utils/price.utils';
 import styles from './productCard.module.scss';
 import { IProduct } from '../../../types/product.type';
 import Button from '../../ui/button/button.ui';
@@ -25,13 +25,13 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, openModal, se
         <p className={styles.productName}>{product.descriptionShort}</p>
         <p className={styles.priceDiscounted}>
           <span style={{ textDecoration: 'line-through' }}>
-            {formatPrice(getDiscountedPrice(product.price, 0.1))}
+            {formatPriceToBRL(product.price)}
           </span>
           <br />
-          {formatPrice(product.price)}
+          {formatPriceToBRL(product.price)}
         </p>
         <p className={styles.priceInstallments}>
-          {getInstallments(product.price, 2)}
+        ou 2x de {formatPriceToBRL(product.price/2)} sem juros
         </p>
         <p>Frete grátis</p>
         <Button variant="blue">COMPRAR</Button>

@@ -8,7 +8,6 @@ Este é o projeto desenvolvido como parte do teste para a vaga de desenvolvedor 
 - **Sass**: Pré-processador CSS para facilitar a escrita de estilos com variáveis, aninhamento e outros recursos.
 - **React Query**: Biblioteca para gerenciamento de estado de dados assíncronos, facilitando o fetch, cache, e sincronização com a API.
 - **useContext**: Hook do React para compartilhar estados e funções entre componentes, sem a necessidade de props.
-- **Webpack** + **Vite**: Ferramentas de bundling e build para otimizar a experiência de desenvolvimento.
 
 ## Como Rodar o Projeto
 

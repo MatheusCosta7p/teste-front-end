@@ -3,7 +3,7 @@ import { IProduct } from 'src/types/product.type';
 import styles from './modalProduct.module.scss';
 import Button from '../../ui/button/button.ui';
 import Modal from '../../ui/modal/modal.component';
-import { formatPrice } from '../../../utils/price.utils';
+import { formatPriceToBRL } from '../../../utils/price.utils';
 import { Icon } from '../../ui/Icon/Icon.ui';
 import useQuantity from '../../../hooks/useQuantity';
 
@@ -23,11 +23,10 @@ export const ModalProduct: React.FC<ModalProductProps> = ({ product, closeModal 
         </div>
         <div className={styles.textColumn}>
           <h2>{product.productName}</h2>
-          <p>{formatPrice(product.price)}</p>
+          <p>{formatPriceToBRL(product.price)}</p>
           <small>{product.descriptionShort}</small>
           <br />
           <a>Veja mais detalhes do produto &gt;</a>
-          
           <div className={styles.buttonsModal}>
             <div className={styles.quantityButtons}>
               <Button variant="quantity" onClick={decreaseQuantity}>

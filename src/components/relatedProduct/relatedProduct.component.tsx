@@ -16,7 +16,7 @@ export function RelatedProduct({ filter }: RelatedProductProps) {
       </div>
 
       <div className={styles.action}>
-        {filter ? <Filter /> : <span>Ver Todos</span>}
+        {filter ? <Filter /> : <a>Ver Todos</a>}
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import "./assets/styles/main.scss"
+import "./assets/styles/_main.scss"
 import { ProductProvider } from './context/product/productProvider.tsx'
 import { QueryClient, QueryClientProvider } from 'react-query';
 import AppRoutes from './routes.tsx'
