@@ -1,16 +1,10 @@
 import { useState } from "react";
 import classNames from "classnames";
 import styles from "./categories.module.scss";
-import { TUiIconTypes } from "../ui/Icon/icon-types.enum";
 import { Icon } from "../ui/Icon/Icon.ui";
+import { ICategory } from "src/types/category.type";
 
-interface Category {
-  key: string;
-  icon: TUiIconTypes;
-  label: string;
-}
-
-const categories: Category[] = [
+const categories: ICategory[] = [
   { key: "tecnologia", icon: "Device", label: "Tecnologia" },
   { key: "supermercado", icon: "Market", label: "Supermercado" },
   { key: "bebidas", icon: "Whiskey", label: "Bebidas" },

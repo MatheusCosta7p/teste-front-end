@@ -44,3 +44,16 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .relatedProduct{
+    .header{
+      h3{
+        font-size: map-get($font-sizes, "600");
+      }
+    }
+    .divider{
+      display: none;
+    }
+  }
+}

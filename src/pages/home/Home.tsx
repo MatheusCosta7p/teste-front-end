@@ -5,6 +5,7 @@ import { HeroSection } from '../../components/heroSection/heroSection.component'
 import Partner from "../../components/partner/partner.component";
 import { RelatedProduct } from "../../components/relatedProduct/relatedProduct.component";
 import styles from "../../assets/styles/pages/Home.module.scss";
+import { Brands } from "../../components/brands/brands.component";
 
 
 function Home() {
@@ -38,6 +39,15 @@ function Home() {
       <section className={styles.partners}>
         <Partner />
       </section>
+
+      <Brands />
+
+      <section className={styles.relatedProducts}>
+        <RelatedProduct />
+      </section>
+
+      <ProductList />
+      
     </main>
   )
 }

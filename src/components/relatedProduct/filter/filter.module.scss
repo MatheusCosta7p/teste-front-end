@@ -29,3 +29,15 @@
     font-weight: map-get($font-weights, "bold");
   }
 }
+
+
+@media (max-width: 768px) {
+  .filterOption{
+    width: auto;
+    flex-direction: column;
+    height: auto;
+  }
+  .button{
+    width: auto;
+  }
+}
