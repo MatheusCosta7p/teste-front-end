@@ -1,54 +1,66 @@
-# React + TypeScript + Vite
+# Frontend Econverse Teste
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é o projeto desenvolvido como parte do teste para a vaga de desenvolvedor frontend.
 
-Currently, two official plugins are available:
+## Tecnologias Usadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React** com **TypeScript**: Biblioteca JavaScript para construção da interface do usuário com tipagem estática.
+- **Sass**: Pré-processador CSS para facilitar a escrita de estilos com variáveis, aninhamento e outros recursos.
+- **React Query**: Biblioteca para gerenciamento de estado de dados assíncronos, facilitando o fetch, cache, e sincronização com a API.
+- **useContext**: Hook do React para compartilhar estados e funções entre componentes, sem a necessidade de props.
+- **Webpack** + **Vite**: Ferramentas de bundling e build para otimizar a experiência de desenvolvimento.
 
-## Expanding the ESLint configuration
+## Como Rodar o Projeto
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Requisitos
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **Node.js** (versão recomendada: 16.x ou superior)
+- **npm** ou **yarn** (gerenciadores de pacotes)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Passos para Rodar Localmente
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. **Clone este repositório:**
+   ```bash
+   git clone https://github.com/MatheusCosta7p/teste-front-end
+   cd teste-front-end
+   ```
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+2. **Instale as dependências:**
+    ```bash
+    npm install
+    ou, se preferir yarn:
+    yarn install
+    ```
+
+3. **Para rodar o projeto em desenvolvimento:**
+    ```bash
+    npm run dev
+    ou, se preferir yarn:
+    yarn dev
+    ```
+
+4. **Abra o navegador e acesse a seguinte URL:**
+
+   [http://localhost:5173/teste-front-end/](http://localhost:5173/teste-front-end/)
+
+
+
+### Metodologia de Desenvolvimento
+
+Durante o desenvolvimento do projeto, acabei utilizando a metodologia **Kanban** no **GitHub Projects** para organizar as tarefas onde foram divididas em três colunas principais:
+
+- **To Do**: Tarefas que ainda precisam ser realizadas.
+- **Doing**: Tarefas que estão sendo trabalhadas atualmente.
+- **Done**: Tarefas que já foram concluídas.
+
+Esse processo me ajudou a visualizar claramente o progresso do projeto e me permitir gerenciar melhor o tempo de desenvolvimento.
+
+Aqui está uma captura de tela do quadro Kanban do GitHub:
+
+![Kanban Board](https://github.com/user-attachments/assets/385d6efd-dcde-437a-a08b-352eacf49e97)
+
+### Link do Projeto em Deploy
+
+Deploy do projeto feito apartir do Github Pages com Github Action:
+
+[Link para o Projeto em Deploy](https://matheuscosta7p.github.io/teste-front-end/)
