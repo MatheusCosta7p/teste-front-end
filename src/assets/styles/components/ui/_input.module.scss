@@ -4,7 +4,8 @@
   display: flex;
   align-items: center;
   position: relative;
-
+  outline: none;
+  
   &--default {
     input {
       border: 1px solid map-get($colors, "gray"); 
@@ -52,6 +53,42 @@
       pointer-events: none;
       background-color: transparent;
     }  
+  }
+
+  &--text{
+    input{
+      width: 233px;
+      height: 42px;
+      border-radius: 8px;
+      border: 1px solid map-get($colors, "light-gray-3");
+      color:  map-get($colors, "another-gray");
+      padding-left: 24px;
+
+      &::placeholder{
+        color: map-get($colors, "another-gray");
+        font-weight: map-get($font-weights, "regular");
+        font-size: map-get($font-sizes, "300");
+        line-height: 18px;
+      }
+    }
+  }
+
+  &--email{
+    input{
+      width: 233px;
+      height: 42px;
+      border-radius: 8px;
+      border: 1px solid map-get($colors, "light-gray-3");
+      color:  map-get($colors, "another-gray");
+      padding-left: 24px;
+
+      &::placeholder{
+        color: map-get($colors, "another-gray");
+        font-weight: map-get($font-weights, "regular");
+        font-size: map-get($font-sizes, "300");
+        line-height: 18px;
+      }
+    }
   }
 
   @media (max-width: 768px) {

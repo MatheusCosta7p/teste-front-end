@@ -1,0 +1,79 @@
+@import "../../assets/styles/base/variables";
+
+.newsLetter {
+  background-color: map-get($colors, "dark-blue-purple");
+  width: auto;
+  height: 162px;
+  color: map-get($colors, "white");
+  padding: 0px 80px 0px 82px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  div{    
+    h5{
+      color: map-get($colors, "white");
+      font-weight: map-get($font-weights, "semibold");
+      font-size: map-get($font-sizes, "700");
+      font-family: "Outfit", sans-serif;
+    }
+
+    p{
+      color: map-get($colors, "white");
+      font-weight: map-get($font-weights, "extralight");
+      font-size: map-get($font-sizes, "300");
+      line-height: 18px;
+    }
+  }
+
+  .newsLetterForm{
+    width: 639px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+
+    button{
+      height: 42px;
+      width: 157px;
+    }
+  }
+
+  input[type=checkbox]{
+    margin-top: 10px;
+  }
+  label{
+    margin-left: 5px;
+    color: map-get($colors, "white");
+    font-weight: map-get($font-weights, "light");
+    font-size: map-get($font-sizes, "300");
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+
+    div {
+      text-align: center;
+
+      h5 {
+        font-size: map-get($font-sizes, "600");
+      }
+
+      p {
+        font-size: map-get($font-sizes, "200");
+      }
+    }
+
+    .newsLetterForm {
+      width: 100%;
+      flex-direction: column;
+      gap: 16px;
+
+      button {
+        width: 100%;
+      }
+    }
+  }
+}

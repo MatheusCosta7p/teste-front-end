@@ -4,8 +4,10 @@ import Header from '../../components/header/header.component';
 import { HeroSection } from '../../components/heroSection/heroSection.component';
 import Partner from "../../components/partner/partner.component";
 import { RelatedProduct } from "../../components/relatedProduct/relatedProduct.component";
-import styles from "../../assets/styles/pages/Home.module.scss";
+import styles from "../../assets/styles/pages/_home.module.scss";
 import { Brands } from "../../components/brands/brands.component";
+import { NewsLetter } from "../../components/newsletter/newsletter.component";
+import Footer from "../../components/footer/footer.component";
 
 
 function Home() {
@@ -47,6 +49,11 @@ function Home() {
       </section>
 
       <ProductList />
+
+      <section className={styles.footer}>
+        <NewsLetter />
+        <Footer />
+      </section>
       
     </main>
   )

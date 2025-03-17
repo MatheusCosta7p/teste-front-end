@@ -1,0 +1,16 @@
+@import "../../../assets/styles/base/variables";
+
+.copyright{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 46.84px;
+  width: 100%;
+  background-color: map-get($colors, "white" );
+
+  p{
+    font-size: map-get($font-sizes, "200");
+    font-weight: map-get($font-weights, "light");
+    color: map-get($colors, "gray-dark" );
+  }
+}

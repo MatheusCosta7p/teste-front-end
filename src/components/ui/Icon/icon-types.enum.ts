@@ -18,6 +18,9 @@ export const UiIconTypes = [
   "Prev",
   "Next",
   "Minus",
-  "Plus"
+  "Plus",
+  "Instagram",
+  "Facebook",
+  "Linkedin"
 ] as const;
 export type TUiIconTypes = (typeof UiIconTypes)[number];

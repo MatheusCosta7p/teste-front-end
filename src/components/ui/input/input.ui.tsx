@@ -5,7 +5,7 @@ import { TUiIconTypes } from '../Icon/icon-types.enum';
 import { Icon } from '../Icon/Icon.ui';
 
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
-  variant?: "default" | "search"; 
+  variant?: "default" | "search" | "email" | "text" 
   icon?: TUiIconTypes; 
   className?: string;
 }

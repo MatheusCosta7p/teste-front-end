@@ -81,4 +81,16 @@ export const uiIconTypeSizeMap = new Map<TUiIconTypes, {width: number, height: n
     "Plus",
     { width: 20.31, height: 19.64}
   ],
+  [
+    "Instagram",
+    { width: 24, height: 24}
+  ],
+  [
+    "Facebook",
+    { width: 24, height: 24}
+  ],
+  [
+    "Linkedin",
+    { width: 24, height: 24}
+  ],
 ]);
