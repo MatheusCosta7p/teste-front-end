@@ -4,7 +4,7 @@ import styles from './modalProduct.module.scss';
 import Button from '../../ui/button/button.ui';
 import Modal from '../../ui/modal/modal.component';
 import { formatPrice } from '../../../utils/price.utils';
-import { Icon } from '../../ui/icon/Icon.ui';
+import { Icon } from '../../ui/Icon/Icon.ui';
 import useQuantity from '../../../hooks/useQuantity';
 
 interface ModalProductProps {

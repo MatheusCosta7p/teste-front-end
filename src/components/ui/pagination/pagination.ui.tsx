@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '../../product/productList/productList.module.scss';
 import Button from '../button/button.ui';
-import { Icon } from '../icon/Icon.ui';
+import { Icon } from '../Icon/Icon.ui';
 
 interface PaginationProps {
   currentPage: number;

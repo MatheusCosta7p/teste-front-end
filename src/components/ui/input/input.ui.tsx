@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from "../../../assets/styles/components/ui/_input.module.scss";
 import classNames from "classnames";
-import { TUiIconTypes } from '../icon/icon-types.enum';
-import { Icon } from '../../ui/icon/Icon.ui';
+import { TUiIconTypes } from '../Icon/icon-types.enum';
+import { Icon } from '../Icon/Icon.ui';
 
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   variant?: "default" | "search"; 

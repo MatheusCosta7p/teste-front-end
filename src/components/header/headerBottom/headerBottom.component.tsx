@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styles from "./headerBottom.module.scss";
-import { Icon } from "../../ui/icon/Icon.ui";
+import { Icon } from "../../ui/Icon/Icon.ui";
 
 export default function HeaderBottom() {
   const [activeLink, setActiveLink] = useState("ofertas");

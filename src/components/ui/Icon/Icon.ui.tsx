@@ -9,8 +9,6 @@ type IconProps = {
   color?: string;
 }
 
-export type { TUiIconTypes };
-
 export const Icon: React.FC<IconProps> = ({ type, className, color = "#9F9F9F" }) => {
   const size = uiIconTypeSizeMap.get(type);
   const width = size?.width || 16;
