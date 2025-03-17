@@ -1,6 +1,6 @@
 import Input from "../../ui/input/input.ui";
 import { Icon } from "../../ui/Icon/Icon.ui";
-import styles from "./headerMiddle.module.scss"
+import styles from "./_headerMiddle.module.scss"
 
 export default function HeaderMiddle() {
   return(

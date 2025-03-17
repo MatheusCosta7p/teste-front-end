@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "./headerBottom.module.scss";
+import styles from "./_headerBottom.module.scss";
 import { Icon } from "../../ui/Icon/Icon.ui";
 
 export default function HeaderBottom() {
