@@ -3,27 +3,43 @@ import { Categories } from '../../components/categories/categories.component';
 import Header from '../../components/header/header.component';
 import { HeroSection } from '../../components/heroSection/heroSection.component';
 import Partner from "../../components/partner/partner.component";
+import { RelatedProduct } from "../../components/relatedProduct/relatedProduct.component";
+import styles from "../../assets/styles/pages/Home.module.scss";
+
 
 function Home() {
   return (
     <main>
-      <Header />
+      <section className={styles.hero}>
+        <Header />
+        <HeroSection />
+      </section>
 
-      <HeroSection />
+      <section className={styles.categories}>
+        <Categories />
+      </section>
 
-      <Categories />
+      <section className={styles.relatedProducts}>
+        <RelatedProduct filter />
+      </section>
 
       <ProductList />
 
-      <Partner />
+      <section className={styles.partners}>
+        <Partner />
+      </section>
+
+      <section className={styles.relatedProducts}>
+        <RelatedProduct />
+      </section>
 
       <ProductList />
 
-      <Partner />
-
-      
+      <section className={styles.partners}>
+        <Partner />
+      </section>
     </main>
   )
 }
 
-export default Home
+export default Home;

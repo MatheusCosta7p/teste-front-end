@@ -1,0 +1,31 @@
+@import "../../../assets/styles/base/variables";
+
+
+.filterOption {
+  display: flex;
+  width: 1280px;
+  height: 40px;
+
+  .button {
+    width: 100%;
+    border: 1px solid map-get($colors, "light-gray-2" );
+    padding: 12px 58px 12px 58px;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    line-height: 16px;
+    font-size: map-get($font-sizes, "400");
+    font-size: map-get($font-weights, "regular");
+    color: map-get($colors, "dark-gray" );
+  
+    &:hover {
+      color: map-get($colors , "blue");
+      font-weight: map-get($font-weights, "bold");
+    }
+  }
+
+  .active {
+    color: map-get($colors , "blue");
+    font-weight: map-get($font-weights, "bold");
+  }
+}

@@ -5,6 +5,11 @@
   transition: background-color 0.3s ease, color 0.3s ease;
   border: none;
 
+  &--default{
+    background-color: transparent;
+    border: none;
+  }
+
   &--yellow {
     width:12.875rem; 
     height: 3.125rem;
