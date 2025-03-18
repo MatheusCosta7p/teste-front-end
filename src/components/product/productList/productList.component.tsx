@@ -22,7 +22,7 @@ const ProductList: React.FC = () => {
   }, []);
 
   useEffect(() => {
-    if (windowWidth < 1280) setItemsPerPage(3);
+    if (windowWidth < 1280) setItemsPerPage(1);
     else setItemsPerPage(4);
   }, [windowWidth]);
 
@@ -32,7 +32,7 @@ const ProductList: React.FC = () => {
   const currentProducts = products.slice(currentPage * itemsPerPage, (currentPage + 1) * itemsPerPage);
 
   return (
-    <div>
+    <div className={styles.productListContainer}>
       <div className={styles.productListWrapper}>
         {currentProducts.map((product) => (
           <ProductCard key={product.productName} product={product} openModal={setModalOpen} setSelectedProduct={setSelectedProduct} />

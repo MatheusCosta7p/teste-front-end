@@ -1,20 +1,28 @@
-@import "../../../assets/styles/base/variables";
-
 .pagination {
   position: absolute;
-  top: 50%; 
-  left: 20px; 
-  right: 20px; 
+  top: 50%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transform: translateY(-50%); 
-  width: calc(100% - 40px);
-  padding: 0 20px;
+  width: 100%;
+  pointer-events: none; 
 }
 
 .pagination button {
+  pointer-events: all; 
   display: flex;
   align-items: center;
   justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+}
+
+.pagination button:first-child {
+  left: -40px;
+}
+
+.pagination button:last-child {
+  right: -40px; 
 }

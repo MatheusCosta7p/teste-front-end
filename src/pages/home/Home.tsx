@@ -24,9 +24,9 @@ function Home() {
 
       <section className={styles.relatedProducts}>
         <RelatedProduct filter />
+        <ProductList  />
       </section>
-
-      <ProductList />
+    
 
       <section className={styles.partners}>
         <Partner />
@@ -34,9 +34,10 @@ function Home() {
 
       <section className={styles.relatedProducts}>
         <RelatedProduct />
+        <ProductList />
       </section>
 
-      <ProductList />
+    
 
       <section className={styles.partners}>
         <Partner />
@@ -46,9 +47,10 @@ function Home() {
 
       <section className={styles.relatedProducts}>
         <RelatedProduct />
+        <ProductList />
       </section>
 
-      <ProductList />
+    
 
       <section className={styles.footer}>
         <NewsLetter />
