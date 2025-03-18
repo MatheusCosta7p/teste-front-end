@@ -60,11 +60,13 @@ Aqui está uma captura de tela do quadro Kanban do GitHub:
 
 ### Gerenciamento de Branches
 
-O desenvolvimento foi realizado utilizando **duas branches** principais:
+O desenvolvimento foi realizado utilizando **três branches** principais:
 
 - **`dev`**: Onde foram feitas as implementações de novas features e melhorias. Cada nova funcionalidade foi desenvolvida em uma branch separada e, após concluída, foi enviada para a branch `dev`.
   
 - **`main`**: A branch principal, onde as funcionalidades testadas e aprovadas na `dev` foram integradas por meio de **merge**.
+
+- **`gh-pages`**: Essa branch é utilizada para hospedar a versão estática do projeto no GitHub Pages. Após a aprovação das funcionalidades na branch `main`, os arquivos necessários para a publicação são enviados para a branch `gh-pages`, permitindo que o projeto seja acessado por meio de uma URL pública.
 
 Esse fluxo de trabalho garantiu que o desenvolvimento das novas funcionalidades não interferisse diretamente na versão estável do projeto, mantendo uma estrutura limpa e organizada.
 
